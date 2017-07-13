@@ -1,0 +1,30 @@
+{
+  "name": "react-backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "babel . --ignore node_modules,build --out-dir build",
+    "start": "nodemon -r babel-register server.js",
+    "notify": "nodemon -r babel-register notifier.js",
+    "start:prod": "node build/server.js"
+  },
+  "dependencies": {
+    "axios": "^0.16.1",
+    "babel-cli": "^6.24.1",
+    "babel-plugin-lodash": "^3.2.11",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "bitmex-websocket": "^0.0.6",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "lodash": "^4.17.4",
+    "node-notifier": "^5.1.2",
+    "tortuga": "^0.1.1"
+  },
+  "devDependencies": {
+    "babel-register": "^6.24.1",
+    "bitcoinity": "^0.1.0",
+    "nodemon": "^1.11.0"
+  }
+}

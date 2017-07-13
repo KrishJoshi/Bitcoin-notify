@@ -2,7 +2,9 @@
 .DS_STORE
 
 # Node.
-node_modules
+../node_modules
 npm-debug.log
-yarn.lock
+server/yarn.lock
 yarn-error.log
+/client/node_modules/
+/server/node_modules/
